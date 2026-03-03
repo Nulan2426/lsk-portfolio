@@ -40,7 +40,7 @@ function App() {
 
           <section id="about" className="container-section about-layout">
             <h2>Hi, I'm Leisa!</h2>
-            <p>I'm a <strong>Full Stack Developer</strong> developer dedicated to weaving together beautiful design with functional, high performance code.
+            <p>I'm a <strong>Full Stack Developer</strong> dedicated to weaving together beautiful design with functional, high performance code.
               With a foundation in React and Node.js I thrive on the challenge of turning complex problems into simple, elegant solutions.
               This portfolio is a reflection of my journey past learning the basics to building scalable web apps, mastering modern web applications
               that prioritise both user experience and clean aesthetics.
