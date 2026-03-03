@@ -11,7 +11,7 @@ export default function Hero() {
 
             <h1 className="gradient-text">Full Stack <br /> Developer</h1>
             <p className="hero-subtitle">
-                Building digital experiences with a Pasifika heart and a modern tech stack.
+                My side quest in code. <br/>Mainly curiosity. Mostly chaos.
             </p>
 
             <div className="hero-btns">
