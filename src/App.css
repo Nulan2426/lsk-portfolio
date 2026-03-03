@@ -14,7 +14,7 @@
   --font-family: 'Outfit', sans-serif;
 }
 
-/* 2. Global Reset */
+/* 2. Global Reset & layout*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,29 +22,40 @@
   scroll-behavior: smooth;
 }
 
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--bg);
   color: var(--text-main);
   font-family: var(--font-family);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
-.container {
+
+.app-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+}
+
+.container-section {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-.section {
-  padding: 4rem 0;
-}
-
-.container-section{
-  padding:4rem 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 1.5rem;
   scroll-margin-top: 5rem;
 }
 
@@ -75,6 +86,7 @@ body {
 
 /* 4. Navbar */
 .navbar {
+  width: 100%;
   padding: 1.2rem 0;
   position: sticky;
   top: 0;
@@ -88,6 +100,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1.5rem;
 }
 
 .logo {
@@ -223,6 +239,10 @@ body {
   text-align: center;
 }
 
+.about-layout p {
+  max-width: 800px;
+}
+
 
 .about-layout .glass {
   width: 100%;
@@ -345,6 +365,61 @@ body {
   color: var(--accent);
 }
 
+/* 7. Skills Section */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.skills-category {
+  padding: 3rem 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  text-align: center;
+  min-height: 300px;
+}
+
+.skills-category h3 {
+  color: var(--soft-yellow);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.skills-tags span {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: var(--accent-light);
+  transition: all 0.3s ease;
+}
+
+.skills-tags span:hover {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  color: var(--text-main);
+}
+
+
 /* 8. Footer */
 .footer {
   text-align: center;
@@ -363,6 +438,21 @@ body {
   .hero-btns {
     flex-direction: row;
     justify-content: center;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .skills-category {
+    flex: 1;
+    text-align: center;
   }
 
   .project-grid {
@@ -385,3 +475,4 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+

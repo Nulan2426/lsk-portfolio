@@ -49,6 +49,34 @@ function App() {
           
           </section>
 
+          <section id="skills" className="container-section ">
+            <div className="skills-container">
+
+              <div className="skills-category glass">
+              <h3>Frontend</h3>
+              <div className="skills-tags">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Vite</span>
+                <span>Modern CSS</span>
+              </div>
+            </div>
+           
+            <div className="skills-category glass">
+              <h3>Backend</h3>
+              <div className="skills-tags">
+                <span>Express.js</span>
+                <span>SQL</span>
+                <span>RESTful APIs</span>
+                <span>Responsive Design</span>
+                <span>UI/UX Principles</span>
+                <span>Git / GitHub</span>
+                <span>Netlify</span>
+              </div>
+              </div>
+              </div>
+          </section>
+
           <section id="projects" className="container-section">
             <div className="project-grid">
               {projects.map((p, i) => (
