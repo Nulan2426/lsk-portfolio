@@ -41,6 +41,13 @@ body {
   padding: 4rem 0;
 }
 
+.container-section{
+  padding:4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  scroll-margin-top: 5rem;
+}
+
 /* 3. Utilities & Typography */
 .glass {
   background: var(--card-bg);
@@ -195,7 +202,6 @@ body {
 
 .btn-primary:hover {
   background: #5b7d50;
-  /* A slightly lighter forest green */
   transform: translateY(-3px);
   box-shadow: 0 10px 20px var(--accent-glow);
 }
