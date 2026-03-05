@@ -54,8 +54,12 @@ main {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 4rem 1.5rem;
-  scroll-margin-top: 5rem;
+  padding: 3rem 1.5rem;
+  scroll-margin-top: 7rem;
+}
+
+.container-section + .container-section {
+  margin-top: 2rem;
 }
 
 /* 3. Utilities & Typography */
